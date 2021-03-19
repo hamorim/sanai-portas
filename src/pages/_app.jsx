@@ -1,5 +1,7 @@
 import Head from 'next/head';
-import '../styles/globals.css';
+import { Header } from '../components/Header';
+
+import '../styles/globals.scss';
 
 const MyApp = ({ Component, pageProps }) => {
   return (
@@ -8,7 +10,10 @@ const MyApp = ({ Component, pageProps }) => {
         <title>Sanai Portas</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Component {...pageProps} />
+      <Header />
+      <section className="container">
+        <Component {...pageProps} />
+      </section>
     </>
   );
 };

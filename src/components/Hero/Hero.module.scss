@@ -1,0 +1,31 @@
+.hero {
+  height: calc(100vh - 8rem);
+  width: 100%;
+  position: relative;
+
+  > div {
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &::before {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-color: #262732;
+      opacity: 0.85;
+    }
+  }
+}
+
+.content {
+  z-index: 2;
+}

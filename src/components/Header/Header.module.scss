@@ -1,0 +1,29 @@
+.container {
+  height: 8rem;
+  width: 100%;
+  background: #fff;
+  padding: 0 2rem;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+
+  div {
+    max-width: 90rem;
+    height: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+      padding: 1rem 1rem;
+      transition: background 0.3s;
+
+      &:hover {
+        background: #eee;
+      }
+    }
+  }
+}
