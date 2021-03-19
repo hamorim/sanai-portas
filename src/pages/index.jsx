@@ -12,7 +12,7 @@ import Hero from '../components/Hero';
 const Home = () => {
   return (
     <>
-      <Hero image="/hero.png">
+      <Hero image="/hero.jpg">
         <div className={styles.hero}>
           <h1>
             Somos uma empresa especializada em portas de enrolar automáticas
@@ -35,7 +35,7 @@ const Home = () => {
       </Hero>
       <section className={styles.about}>
         <div>
-          <img src="/about.png" alt="Sobre" />
+          <img src="/about.jpg" alt="Sobre" />
           <div>
             <h1>Sobre Nós</h1>
             <p>
