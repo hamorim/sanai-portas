@@ -3,10 +3,11 @@
 
   h1 {
     color: #eee;
+    letter-spacing: -0.15rem;
     text-align: center;
-    font-weight: normal;
+    font-weight: 900;
     line-height: 1.2;
-    font-size: 5.6rem;
+    font-size: 5.8rem;
     padding-bottom: 4rem;
     display: block;
   }
@@ -25,7 +26,8 @@
       align-items: center;
 
       svg {
-        font-size: 6.2rem;
+        font-size: 6.4rem;
+        margin-bottom: 1.6rem;
       }
 
       &:nth-of-type(1) {
@@ -78,7 +80,8 @@
 
       &::before {
         content: '01';
-        font-size: 24rem;
+        font-size: 22rem;
+        font-weight: 900;
         color: #eee;
         position: absolute;
         top: 0;
@@ -126,5 +129,131 @@
     &:nth-of-type(3) {
       color: #feb960;
     }
+  }
+}
+
+.hire {
+  padding: 6rem 0;
+  color: #333;
+  min-width: 90rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #fff;
+
+  > div:first-child {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    &::before {
+      content: '02';
+      font-size: 22rem;
+      font-weight: 900;
+      color: #eee;
+      position: absolute;
+      top: -8rem;
+      left: 32rem;
+      z-index: -1;
+    }
+  }
+
+  h1 {
+    margin-bottom: 2.4rem;
+    font-weight: 900;
+  }
+
+  div:nth-of-type(2) {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 2rem 0;
+
+    div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+
+      p {
+        margin-left: 1rem;
+        max-width: 16rem;
+        color: #333;
+      }
+
+      svg {
+        font-size: 6rem;
+      }
+
+      &:nth-of-type(1),
+      &:nth-of-type(5) {
+        color: #38c695;
+      }
+
+      &:nth-of-type(3),
+      &:nth-of-type(4) {
+        color: #b27cf5;
+      }
+
+      &:nth-of-type(2),
+      &:nth-of-type(6) {
+        color: #feb960;
+      }
+    }
+  }
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5.2rem;
+  align-items: center;
+  text-align: center;
+
+  padding: 8rem 4rem;
+  background-color: rgba(64, 66, 72, 0.8);
+
+  div {
+    min-height: 12rem;
+    h3 {
+      font-size: 1.8rem;
+      margin-bottom: 1.6rem;
+    }
+
+    &:nth-of-type(1) {
+      color: #38c695;
+      border-bottom: 2px solid;
+    }
+
+    &:nth-of-type(2) {
+      color: #b27cf5;
+      border-bottom: 2px solid;
+    }
+
+    &:nth-of-type(3) {
+      color: #feb960;
+      border-bottom: 2px solid;
+    }
+
+    p {
+      color: #fff;
+      line-height: 2.4rem;
+    }
+  }
+}
+
+.footnote {
+  padding: 1rem;
+  background-color: rgba(64, 66, 72, 1);
+  text-align: center;
+  p {
+    color: #fff;
   }
 }
